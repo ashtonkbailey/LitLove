@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import './App.css';
-import logo from '../public/LitLoveLogo.png';
+import './App.scss';
+import logo from './assets/LitLoveLogo.png';
 import MainDisplay from './MainDisplay';
 
 class App extends Component {

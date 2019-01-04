@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import Search from './Search';
+import Search from './containers/search/Search';
 import Books from './Books';
 
 const MainDisplay = (props) => {
@@ -21,4 +21,5 @@ const MainDisplay = (props) => {
   )
 }
 
-export default connect(mapStateToProps)(MainDisplay);
+export default MainDisplay;
+// connect(mapStateToProps)(MainDisplay);

@@ -23,7 +23,7 @@ class Search extends Component {
 
     return (
       <div>
-        <p>
+        <p className="search-text">
           Welcome!
           <br/>
           We’d like to help you find your next great read.
@@ -43,9 +43,7 @@ class Search extends Component {
             placeholder="Book Title"
             autofocus={true}
           />
-          <button
-            className="search-btn"
-          >
+          <button className="search-btn">
             Start your Search
           </button>
         </form>
