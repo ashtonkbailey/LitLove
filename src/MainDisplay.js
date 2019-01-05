@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import Search from './containers/search/Search';
+import Search from './containers/Search/Search';
 import Books from './Books';
 
 const MainDisplay = (props) => {

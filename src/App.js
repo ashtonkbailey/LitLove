@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './App.scss';
+import './index.scss';
 import logo from './assets/LitLoveLogo.png';
 import MainDisplay from './MainDisplay';
 
