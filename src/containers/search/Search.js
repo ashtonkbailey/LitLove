@@ -27,7 +27,7 @@ class Search extends Component {
 
     if (type === 'welcome') {
       text = (
-        <p className="search-text">
+        <p className="welcome text">
           Welcome!
           <br/>
           We’d like to help you find your next great read.
@@ -38,7 +38,7 @@ class Search extends Component {
       button = "Start your Search"
     } else {
       text = (
-        <p className="search-text">
+        <p className="search text">
           Looking for your next book?
           Enter a title you love to start the search process.
         </p>);
