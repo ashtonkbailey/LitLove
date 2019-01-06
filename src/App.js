@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './index.scss';
 import logo from './assets/LitLoveLogo.png';
 import MainDisplay from './containers/MainDisplay/MainDisplay';
+import Navigation from './components/Navigation/Navigation';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
             alt="Lit Love Logo"
             className="logo"
           />
+          <Navigation />
         </header>
         <MainDisplay />
       </div>

@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Books extends Component {
-  render() {
-    return (
-      <div>
-      </div>
-    )
-  }
+import '../../index.scss';
+
+const Books = () => {
+  return (
+    <div>
+    </div>
+  )
 }
 
 export default Books;
