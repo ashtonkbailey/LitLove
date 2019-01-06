@@ -1,0 +1,22 @@
+.nav {
+  margin: 3em;
+  margin-right: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  button {
+    background: #DAB192;
+    box-shadow:
+      0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset -5px 6px 15px #EBCBB3;
+    width: 9em;
+    height: 2em;
+    font-family: Sarabun;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #363636;
+    outline: none;
+  }
+}
