@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './index.scss';
 import logo from './assets/LitLoveLogo.png';
-import MainDisplay from './MainDisplay';
+import MainDisplay from './containers/MainDisplay/MainDisplay';
 
 class App extends Component {
   render() {
