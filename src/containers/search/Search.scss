@@ -1,11 +1,19 @@
-.search-text {
+.text {
   font-size: 34px;
   text-align: center;
   color: #FFFFFF;
-  height: 300px;
   width: 700px;
   margin: auto;
+}
+
+.welcome {
+  height: 300px;
   margin-top: 1em;
+}
+
+.search {
+  height: 150px;
+  margin-top: 3em;
 }
 
 .search-form {
@@ -51,6 +59,7 @@
     height: 2.5em;
     width: 10em;
     outline: none;
+    cursor: pointer;
   }
 
 }

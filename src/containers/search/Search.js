@@ -14,23 +14,40 @@ class Search extends Component {
     this.setState({ [name]: value })
   }
 
-  handleSubmit = () => {
-
+  handleSubmit = (e) => {
+    e.preventDefault();
   }
 
   render() {
     const { title } = this.state;
+    const { type } = this.props;
 
-    return (
-      <div>
-        <p className="search-text">
+    let text;
+    let button;
+
+    if (type === 'welcome') {
+      text = (
+        <p className="welcome text">
           Welcome!
           <br/>
           We’d like to help you find your next great read.
           Enter a book title you love, and click the search
           button to find that book. Based on your choice,
           we’ll give you some recommendations.
-        </p>
+        </p>);
+      button = "Start your Search"
+    } else {
+      text = (
+        <p className="search text">
+          Looking for your next book?
+          Enter a title you love to start the search process.
+        </p>);
+      button = "New Search"
+    }
+
+    return (
+      <div>
+        {text}
         <form
           className="search-form"
           onSubmit={this.handleSubmit}
@@ -44,7 +61,7 @@ class Search extends Component {
             autofocus={true}
           />
           <button className="search-btn">
-            Start your Search
+            {button}
           </button>
         </form>
       </div>

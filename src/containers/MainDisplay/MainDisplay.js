@@ -5,19 +5,12 @@ import '../../index.scss';
 import Search from '../Search/Search';
 import Books from '../Books/Books';
 
-const MainDisplay = (props) => {
-  const { searchResults } = props;
-  let display;
+const MainDisplay = () => {
 
-  if (!searchResults) {
-    display = (<Search />)
-  } else {
-    display = (<Books />)
-  }
 
   return (
     <div>
-      {display}
+
     </div>
   )
 }
