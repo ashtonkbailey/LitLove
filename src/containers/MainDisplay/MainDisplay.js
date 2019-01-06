@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import Search from './containers/Search/Search';
-import Books from './Books';
+import Search from '../Search/Search';
+import Books from '../Books/Books';
 
 const MainDisplay = (props) => {
   const { searchResults } = props;
