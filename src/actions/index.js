@@ -4,9 +4,10 @@ export const addFavorite = (book) => ({
   book
 })
 
-export const deleteFavorite = (book) => ({
+export const deleteFavorite = (bookId, i) => ({
   type: 'DELETE_FAVORITE',
-  book
+  bookId,
+  i
 })
 
 // loved book
