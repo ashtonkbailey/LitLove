@@ -1,7 +1,7 @@
 const lovedBookReducer = (state = {}, action) => {
   switch (action.type) {
     case 'ADD_LOVED_BOOK':
-      return {...book}
+      return {...action.book}
     default:
       return state
   }
