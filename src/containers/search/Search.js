@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { lovedBookFetch } from '../../utils/apiCalls';
+
 class Search extends Component {
   constructor() {
     super()
@@ -14,8 +16,10 @@ class Search extends Component {
     this.setState({ [name]: value })
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
+    const { title } = this.state;
+    const possibleBooks = await lovedBookFetch(title);
   }
 
   render() {

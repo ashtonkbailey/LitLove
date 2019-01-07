@@ -1,19 +1,19 @@
-import React from 'react';
-import { connect } from 'react-redux';
+// import React from 'react';
+// import { connect } from 'react-redux';
 
-import '../../index.scss';
-import Search from '../Search/Search';
-import Books from '../Books/Books';
+// import '../../index.scss';
+// import Search from '../Search/Search';
+// import Books from '../Books/Books';
 
-const MainDisplay = () => {
+// const MainDisplay = () => {
 
 
-  return (
-    <div>
+//   return (
+//     <div>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default MainDisplay;
+// export default MainDisplay;
 // connect(mapStateToProps)(MainDisplay);
