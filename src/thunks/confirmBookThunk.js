@@ -1,5 +1,5 @@
 import { tDKey } from '../utils/tasteDiveAPI.js';
-import { addLovedBook, setError } from '../actions';
+import { addLovedBook, addRecommendations, setError } from '../actions';
 
 export const confirmBookThunk = (bookTitle) => {
   return async (dispatch) => {
@@ -10,8 +10,8 @@ export const confirmBookThunk = (bookTitle) => {
         throw Error('Unable to get book recommendations')
       }
       const recommendedBooks = await response.json();
-      dispatch(addLovedBook(bookTitle))
-      return recommendedBooks.Similar.Results
+      dispatch(addLovedBook(bookTitle));
+      dispatch(addRecommendations(recommendedBooks.Similar.Results))
     } catch (error) {
       dispatch(setError(error.message))
     }

@@ -6,8 +6,7 @@ import BookCard from '../BookCard/BookCard';
 
 class Books extends Component {
   render() {  
-    const { type, possibleBooks, lovedBook, recommendations } = this.props
-    console.log(recommendations)
+    const { type, possibleBooks, lovedBook, recommendations } = this.props;
     let text;
     let bookCards;
     let prompt;
@@ -34,15 +33,15 @@ class Books extends Component {
       )
     } else {
       text = `Here are some recommendations based on '${lovedBook}':`;
-      // bookCards = recommendations.map((book) => {
-      //   return (
-      //     <BookCard
-      //       {...book}
-      //       key={book.sUrl}
-      //       type={type}
-      //     />
-      //   )
-      // })
+      bookCards = recommendations.map((book) => {
+        return (
+          <BookCard
+            {...book}
+            key={book.sUrl}
+            type={type}
+          />
+        )
+      })
     }
 
     return (
@@ -60,7 +59,8 @@ class Books extends Component {
 
 export const mapStateToProps = (state) => ({
   possibleBooks: state.possibleBooks,
-  lovedBook: state.lovedBook
+  lovedBook: state.lovedBook,
+  recommendations: state.recommendations
 })
 
 

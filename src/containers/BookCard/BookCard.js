@@ -18,7 +18,7 @@ class BookCard extends Component {
   }
 
   render () {
-    const { confirmed, recommendations } = this.state;
+    const { confirmed } = this.state;
     let bookTitle;
     let blurb;
     let fave;
