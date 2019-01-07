@@ -1,0 +1,26 @@
+.card {
+  font-family: Sarabun;
+  color: #ffffff;
+  height: 360px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  overflow: hidden;
+  padding: 1em;
+  background: #363636;
+  text-align: center;
+
+  img {
+    object-fit: none;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-weight: normal;
+    margin: 0;
+  }
+}

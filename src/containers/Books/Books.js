@@ -22,8 +22,8 @@ class Books extends Component {
     }
 
     return (
-      <div>
-        <h2>{text}</h2>
+      <div className="books">
+        <h3 className="books-text">{text}</h3>
         <hr />
         <div className="books-container">
           {bookCards}

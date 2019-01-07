@@ -4,7 +4,7 @@ import { addPossibleBooks, setError } from '../actions';
 export const addPossibleBooksThunk = (title) => {
   return async (dispatch) => {
     try {
-      const url = `https://www.googleapis.com/books/v1/volumes?q=${title}&key=${googleKey}&fields=items(id, volumeInfo/title, volumeInfo/authors, volumeInfo/description, volumeInfo/imageLinks)`;
+      const url = `https://www.googleapis.com/books/v1/volumes?q=${title}&key=${googleKey}&maxResults=5&fields=items(id, volumeInfo/title, volumeInfo/authors, volumeInfo/description, volumeInfo/imageLinks)`;
       const response = await fetch(url);
       if (!response.ok) {
         throw Error('Unable to get book list')
