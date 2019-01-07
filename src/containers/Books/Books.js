@@ -16,7 +16,13 @@ class Books extends Component {
     if (type === 'confirm') {
       text = "Confirm your loved book:";
       bookCards = possibleBooks.items.map((book) => {
-        return <BookCard {...book} key={book.id} type={type}/>
+        return (
+          <BookCard
+            {...book}
+            key={book.id}
+            type={type}
+          />
+        )
       });
       prompt = (
         <h3 className="end-text">
@@ -48,5 +54,6 @@ class Books extends Component {
 export const mapStateToProps = (state) => ({
   possibleBooks: state.possibleBooks
 })
+
 
 export default connect(mapStateToProps)(Books);
