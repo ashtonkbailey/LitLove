@@ -3,8 +3,6 @@
   color: #ffffff;
   height: 360px;
   width: 330px;
-  display: flex;
-  flex-direction: column;
   margin: 2em;
   overflow: hidden;
   padding: 1em;
@@ -13,6 +11,8 @@
 
   img {
     object-fit: none;
+    position: relative;
+    right: 1.8em;
   }
 
   h3 {
@@ -22,5 +22,27 @@
   h4 {
     font-weight: normal;
     margin: 0;
+  }
+
+  button {
+    background: #DAB192;
+    box-shadow: 
+      0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset -5px 6px 15px #EBCBB3;
+    font-family: Sarabun;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #363636;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .confirm-btn {
+    height: 2em;
+    width: 5em;
+    position: relative;
+    bottom: 14.7em;
+    right: 6em;
   }
 }

@@ -14,7 +14,7 @@ class Books extends Component {
     if (type === 'confirm') {
       text = "Confirm your loved book:";
       bookCards = possibleBooks.items.map((book) => {
-        return <BookCard {...book} key={book.id} />
+        return <BookCard {...book} key={book.id} type={type}/>
       })
     } else {
       // need to bring in book title from lovedBook in store
