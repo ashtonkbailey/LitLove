@@ -1,26 +1,37 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+
+import { addPossibleBooksThunk } from '../../thunks/addPossibleBooksThunk';
 
 class Search extends Component {
   constructor() {
     super()
     this.state = {
-      title: ''
+      title: '',
+      submitted: false
     }
   }
 
   handleChange = (e) => {
-    // may just sub in 'title' if there aren't any other state items
     const { name, value } = e.target;
     this.setState({ [name]: value })
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
+    const { title } = this.state;
+    await this.props.addPossibleBooks(title);
+    this.setState({ submitted: true })
   }
 
   render() {
-    const { title } = this.state;
+    const { title, submitted } = this.state;
     const { type } = this.props;
+
+    if (submitted) {
+      return <Redirect to="/confirmBook" />
+    }
 
     let text;
     let button;
@@ -58,7 +69,7 @@ class Search extends Component {
             name="title"
             value={title}
             placeholder="Book Title"
-            autofocus={true}
+            autoFocus={true}
           />
           <button className="search-btn">
             {button}
@@ -69,4 +80,8 @@ class Search extends Component {
   }
 }
 
-export default Search;
+export const mapDispatchToProps = (dispatch) => ({
+  addPossibleBooks: (title) => dispatch(addPossibleBooksThunk(title))
+})
+
+export default connect(null, mapDispatchToProps)(Search);

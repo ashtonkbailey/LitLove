@@ -1,0 +1,36 @@
+.books-text {
+  font-family: Sarabun;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  height: 3px;
+  background: #1f1f1f;
+  background-image: linear-gradient(to right, #1f1f1f, #dab192, rgba(44, 44, 44, 0.6));
+  margin-bottom: 1em;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5em;
+}
+
+.end-text {
+  font-family: Sarabun;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #FFFFFF;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #dab192;
+}
