@@ -1,7 +1,8 @@
-import BookCard from './BookCard';
-
-import { shallow } from 'enzyme';
 import React from 'react';
+import { shallow } from 'enzyme';
+
+import BookCard, { mapDispatchToProps } from './BookCard';
+import { confirmBookThunk } from '../../thunks/confirmBookThunk';
 
 describe('BookCard', () => {
   let wrapper;
@@ -63,5 +64,15 @@ describe('BookCard', () => {
       expect(wrapper.instance().confirmBook).toHaveBeenCalled()
     })
     
+  });
+
+  describe('mapDispatchToProps', () => {
+    it.skip('should return a props object with the method confirmBookThunk', () => {
+      const mockDispatch = jest.fn();
+      confirmBookThunk.mockImplementation(() => 'Book confirmed');
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.confirmBookThunk();
+      expect(mockDispatch).toHaveBeenCalledWith('Book confirmed')
+    })
   })
 })
