@@ -26,6 +26,13 @@ class App extends Component {
           <Route exact path="/new" render={() => <Search type="/new" />} />
           <Route exact path="/confirmBook" render={() => <Books type="confirm" />} />
           <Route exact path="/recommendations" render={() => <Books type="recommendations" />} />
+          <Route path='' render={() => 
+            (<div className="wrong-path">
+              <h1>Does this page exist if you're not looking at it?</h1>
+              <br/>
+              <h3>No. Go <Link to='/'>home</Link>.</h3>   
+            </div>)
+          } />
         </Switch>
       </div>
     );
