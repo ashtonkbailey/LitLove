@@ -4,11 +4,9 @@ import { Link } from 'react-router-dom';
 
 import BookCard from '../BookCard/BookCard';
 
-// import '../../index.scss';
-
 class Books extends Component {
   render() {  
-    const { type, possibleBooks } = this.props
+    const { type, possibleBooks, lovedBook, recommendations } = this.props;
     let text;
     let bookCards;
     let prompt;
@@ -16,7 +14,13 @@ class Books extends Component {
     if (type === 'confirm') {
       text = "Confirm your loved book:";
       bookCards = possibleBooks.items.map((book) => {
-        return <BookCard {...book} key={book.id} type={type}/>
+        return (
+          <BookCard
+            {...book}
+            key={book.id}
+            type={type}
+          />
+        )
       });
       prompt = (
         <h3 className="end-text">
@@ -28,8 +32,16 @@ class Books extends Component {
         </h3>
       )
     } else {
-      // need to bring in book title from lovedBook in store
-      text = "Here are some recommendations based on :"
+      text = `Here are some recommendations based on '${lovedBook}':`;
+      bookCards = recommendations.map((book) => {
+        return (
+          <BookCard
+            {...book}
+            key={book.sUrl}
+            type={type}
+          />
+        )
+      })
     }
 
     return (
@@ -46,7 +58,10 @@ class Books extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  possibleBooks: state.possibleBooks
+  possibleBooks: state.possibleBooks,
+  lovedBook: state.lovedBook,
+  recommendations: state.recommendations
 })
+
 
 export default connect(mapStateToProps)(Books);

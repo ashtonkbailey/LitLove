@@ -1,30 +1,73 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 
-const BookCard = ({ volumeInfo, type }) => {
-  const imageURL = volumeInfo.imageLinks.smallThumbnail;
-  const title = volumeInfo.title;
-  const author = volumeInfo.authors[0];
-  const blurb = volumeInfo.description;
-  let fave;
+import { confirmBookThunk } from '../../thunks/confirmBookThunk'
 
-  if (type === 'confirm') {
-    fave = ''
-  } else {
-    fave = <button>star</button>
+class BookCard extends Component {
+  constructor() {
+    super();
+    this.state = {
+      confirmed: false
+    }
   }
 
-  return (
-    <div className="card">
-      <button
-        className="confirm-btn"
-      >Confirm</button>
-      <img src={imageURL} alt={title} />
-        {fave}
-      <h3>{title}</h3>
-      <h4>{author}</h4>
-      <p>{blurb}</p>
-    </div>
-  )
+  handleClick = async (e) => {
+    const bookTitle = this.props.volumeInfo.title;
+    await this.props.confirmBook(bookTitle);
+    this.setState({ confirmed: true })
+  }
+
+  render () {
+    const { confirmed } = this.state;
+    let bookTitle;
+    let blurb;
+    let imageURL;
+    let author;
+    let cardContent;
+
+    if (this.props.type === 'confirm') {
+      imageURL = this.props.volumeInfo.imageLinks.smallThumbnail;
+      author = this.props.volumeInfo.authors[0];
+      bookTitle = this.props.volumeInfo.title;
+      blurb = this.props.volumeInfo.description;
+      cardContent = (
+        <div>
+          <button
+            className="confirm-btn"
+            onClick={this.handleClick}
+          >Confirm</button>
+          <img src={imageURL} alt={bookTitle} />
+          <h3>{bookTitle}</h3>
+          <h4>{author}</h4>
+          <p>{blurb}</p>
+        </div>
+      )
+    } else {
+      bookTitle = this.props.Name;
+      blurb = this.props.wTeaser;
+      cardContent = (
+        <div>
+          <h3 className="rec-title">{bookTitle}</h3>
+          <p>{blurb}</p>
+        </div>
+      )
+    }
+
+    if (confirmed) {
+      return <Redirect to="/recommendations" />
+    }
+
+    return (
+      <div className="card">
+        {cardContent}
+      </div>
+    )
+  }
 }
 
-export default BookCard;
+export const mapDispatchToProps = (dispatch) => ({
+  confirmBook: (bookTitle) => dispatch(confirmBookThunk(bookTitle))
+})
+
+export default connect(null, mapDispatchToProps)(BookCard);

@@ -22,6 +22,12 @@ export const addLovedBook = (book) => ({
   book
 })
 
+// recommendations
+export const addRecommendations = (books) => ({
+  type: 'ADD_RECOMMENDATIONS',
+  books
+})
+
 // errors
 export const setError = (error) => ({
   type: 'SET_ERROR',
