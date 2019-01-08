@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import { confirmBookThunk } from '../../thunks/confirmBookThunk'
 
@@ -64,6 +65,13 @@ export class BookCard extends Component {
       </div>
     )
   }
+}
+
+BookCard.propTypes = {
+  confirmBook: PropTypes.func.isRequired,
+  id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  volumeInfo: PropTypes.object.isRequired
 }
 
 export const mapDispatchToProps = (dispatch) => ({
