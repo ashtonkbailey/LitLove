@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 
 import { confirmBookThunk } from '../../thunks/confirmBookThunk'
 
-class BookCard extends Component {
+export class BookCard extends Component {
   constructor() {
     super();
     this.state = {

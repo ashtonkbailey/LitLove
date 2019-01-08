@@ -43,7 +43,11 @@ describe('confirmBookThunk', () => {
     ];
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       ok: true,
-      json: () => recommendedBooks.Similar.mockRecommendations
+      json: () => { 
+        recommendations: {
+          Similar: mockRecommendations
+        }
+      }
     }));
     const thunk = confirmBookThunk(mockTitle);
     await thunk(mockDispatch);

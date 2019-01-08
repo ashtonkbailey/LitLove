@@ -43,7 +43,6 @@ describe('Search', () => {
       wrapper = shallow(<Search type="new" />);
       const e = { preventDefault: jest.fn() }
       wrapper.instance().handleSubmit = jest.fn();
-
       wrapper.instance().forceUpdate(); 
       wrapper.find('form').simulate('submit', e);
       expect(wrapper.instance().handleSubmit).toBeCalledWith(e);

@@ -3,7 +3,7 @@
 exports[`BookCard should match snapshot if type is confirm 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(BookCard)
+  Symbol(enzyme.__unrendered__): <BookCard
     id="ZI3gAQAACAAJ"
     type="confirm"
     volumeInfo={
@@ -31,59 +31,245 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": <div>
+        <button
+          className="confirm-btn"
+          onClick={[Function]}
+        >
+          Confirm
+        </button>
+        <img
+          alt="The Alchemist"
+          src="link"
+        />
+        <h3>
+          The Alchemist
+        </h3>
+        <h4>
+          Paulo Coelho
+        </h4>
+        <p>
+          A special...
+        </p>
+      </div>,
+      "className": "card",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
-        },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="confirm-btn"
+            onClick={[Function]}
+          >
+            Confirm
+          </button>,
+          <img
+            alt="The Alchemist"
+            src="link"
+          />,
+          <h3>
+            The Alchemist
+          </h3>,
+          <h4>
+            Paulo Coelho
+          </h4>,
+          <p>
+            A special...
+          </p>,
+        ],
       },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Confirm",
+            "className": "confirm-btn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Confirm",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "The Alchemist",
+            "src": "link",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "The Alchemist",
+          },
+          "ref": null,
+          "rendered": "The Alchemist",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Paulo Coelho",
+          },
+          "ref": null,
+          "rendered": "Paulo Coelho",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "A special...",
+          },
+          "ref": null,
+          "rendered": "A special...",
+          "type": "p",
+        },
+      ],
+      "type": "div",
     },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": <div>
+          <button
+            className="confirm-btn"
+            onClick={[Function]}
+          >
+            Confirm
+          </button>
+          <img
+            alt="The Alchemist"
+            src="link"
+          />
+          <h3>
+            The Alchemist
+          </h3>
+          <h4>
+            Paulo Coelho
+          </h4>
+          <p>
+            A special...
+          </p>
+        </div>,
+        "className": "card",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
-          },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="confirm-btn"
+              onClick={[Function]}
+            >
+              Confirm
+            </button>,
+            <img
+              alt="The Alchemist"
+              src="link"
+            />,
+            <h3>
+              The Alchemist
+            </h3>,
+            <h4>
+              Paulo Coelho
+            </h4>,
+            <p>
+              A special...
+            </p>,
+          ],
         },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Confirm",
+              "className": "confirm-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Confirm",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "The Alchemist",
+              "src": "link",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "The Alchemist",
+            },
+            "ref": null,
+            "rendered": "The Alchemist",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Paulo Coelho",
+            },
+            "ref": null,
+            "rendered": "Paulo Coelho",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "A special...",
+            },
+            "ref": null,
+            "rendered": "A special...",
+            "type": "p",
+          },
+        ],
+        "type": "div",
       },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -109,7 +295,7 @@ ShallowWrapper {
 exports[`BookCard should match snapshot if type is recommendations 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(BookCard)
+  Symbol(enzyme.__unrendered__): <BookCard
     Name="Brida"
     Type="book"
     type="recommendations"
@@ -129,59 +315,131 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": <div>
+        <h3
+          className="rec-title"
+        >
+          Brida
+        </h3>
+        <p>
+          Paulo Coelho...
+        </p>
+      </div>,
+      "className": "card",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
-        },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3
+            className="rec-title"
+          >
+            Brida
+          </h3>,
+          <p>
+            Paulo Coelho...
+          </p>,
+        ],
       },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Brida",
+            "className": "rec-title",
+          },
+          "ref": null,
+          "rendered": "Brida",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Paulo Coelho...",
+          },
+          "ref": null,
+          "rendered": "Paulo Coelho...",
+          "type": "p",
+        },
+      ],
+      "type": "div",
     },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": <div>
+          <h3
+            className="rec-title"
+          >
+            Brida
+          </h3>
+          <p>
+            Paulo Coelho...
+          </p>
+        </div>,
+        "className": "card",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
-          },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3
+              className="rec-title"
+            >
+              Brida
+            </h3>,
+            <p>
+              Paulo Coelho...
+            </p>,
+          ],
         },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Brida",
+              "className": "rec-title",
+            },
+            "ref": null,
+            "rendered": "Brida",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Paulo Coelho...",
+            },
+            "ref": null,
+            "rendered": "Paulo Coelho...",
+            "type": "p",
+          },
+        ],
+        "type": "div",
       },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

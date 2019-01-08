@@ -7,6 +7,7 @@ ShallowWrapper {
     lovedBook={
       Object {
         "author": "bob loblaw",
+        "id": 123,
         "title": "hi",
       }
     }
@@ -15,6 +16,7 @@ ShallowWrapper {
         "items": Array [
           Object {
             "author": "bob loblaw",
+            "id": 123,
             "title": "hi",
           },
         ],
@@ -24,6 +26,7 @@ ShallowWrapper {
       Array [
         Object {
           "author": "bob loblob",
+          "id": 123,
           "title": "hey",
         },
       ]
@@ -55,6 +58,7 @@ ShallowWrapper {
         >
           <Connect(BookCard)
             author="bob loblaw"
+            id={123}
             title="hi"
             type="confirm"
           />
@@ -108,6 +112,7 @@ ShallowWrapper {
             Array [
               <Connect(BookCard)
                 author="bob loblaw"
+                id={123}
                 title="hi"
                 type="confirm"
               />,
@@ -133,10 +138,11 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "123",
             "nodeType": "class",
             "props": Object {
               "author": "bob loblaw",
+              "id": 123,
               "title": "hi",
               "type": "confirm",
             },
@@ -222,6 +228,7 @@ ShallowWrapper {
           >
             <Connect(BookCard)
               author="bob loblaw"
+              id={123}
               title="hi"
               type="confirm"
             />
@@ -275,6 +282,7 @@ ShallowWrapper {
               Array [
                 <Connect(BookCard)
                   author="bob loblaw"
+                  id={123}
                   title="hi"
                   type="confirm"
                 />,
@@ -300,10 +308,11 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "123",
               "nodeType": "class",
               "props": Object {
                 "author": "bob loblaw",
+                "id": 123,
                 "title": "hi",
                 "type": "confirm",
               },
@@ -399,6 +408,7 @@ ShallowWrapper {
     lovedBook={
       Object {
         "author": "bob loblaw",
+        "id": 123,
         "title": "hi",
       }
     }
@@ -406,6 +416,7 @@ ShallowWrapper {
       Array [
         Object {
           "author": "bob loblaw",
+          "id": 123,
           "title": "hi",
         },
       ]
@@ -414,6 +425,7 @@ ShallowWrapper {
       Array [
         Object {
           "author": "bob loblob",
+          "id": 123,
           "title": "hey",
         },
       ]
@@ -445,6 +457,7 @@ ShallowWrapper {
         >
           <Connect(BookCard)
             author="bob loblob"
+            id={123}
             title="hey"
             type="recommendations"
           />
@@ -484,6 +497,7 @@ ShallowWrapper {
             Array [
               <Connect(BookCard)
                 author="bob loblob"
+                id={123}
                 title="hey"
                 type="recommendations"
               />,
@@ -500,6 +514,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "author": "bob loblob",
+              "id": 123,
               "title": "hey",
               "type": "recommendations",
             },
@@ -532,6 +547,7 @@ ShallowWrapper {
           >
             <Connect(BookCard)
               author="bob loblob"
+              id={123}
               title="hey"
               type="recommendations"
             />
@@ -571,6 +587,7 @@ ShallowWrapper {
               Array [
                 <Connect(BookCard)
                   author="bob loblob"
+                  id={123}
                   title="hey"
                   type="recommendations"
                 />,
@@ -587,6 +604,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "author": "bob loblob",
+                "id": 123,
                 "title": "hey",
                 "type": "recommendations",
               },
