@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import BookCard from '../BookCard/BookCard';
 
-class Books extends Component {
+export class Books extends Component {
   render() {  
     const { type, possibleBooks, lovedBook, recommendations } = this.props;
     let text;

@@ -3,7 +3,7 @@
 exports[`Books should match the snapshot if type is confirm 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(Books)
+  Symbol(enzyme.__unrendered__): <Books
     lovedBook={
       Object {
         "author": "bob loblaw",
@@ -11,12 +11,14 @@ ShallowWrapper {
       }
     }
     possibleBooks={
-      Array [
-        Object {
-          "author": "bob loblaw",
-          "title": "hi",
-        },
-      ]
+      Object {
+        "items": Array [
+          Object {
+            "author": "bob loblaw",
+            "title": "hi",
+          },
+        ],
+      }
     }
     recommendations={
       Array [
@@ -39,59 +41,335 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <h3
+          className="books-text"
+        >
+          Confirm your loved book:
+        </h3>,
+        <hr />,
+        <div
+          className="books-container"
+        >
+          <Connect(BookCard)
+            author="bob loblaw"
+            title="hi"
+            type="confirm"
+          />
+          <h3
+            className="end-text"
+          >
+            Don't see your book? Click
+            <span>
+              <Link
+                replace={false}
+                to="/new"
+              >
+                 here 
+              </Link>
+            </span>
+            to try again.
+          </h3>
+        </div>,
+      ],
+      "className": "books",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Confirm your loved book:",
+          "className": "books-text",
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+        "ref": null,
+        "rendered": "Confirm your loved book:",
+        "type": "h3",
       },
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Array [
+              <Connect(BookCard)
+                author="bob loblaw"
+                title="hi"
+                type="confirm"
+              />,
+            ],
+            <h3
+              className="end-text"
+            >
+              Don't see your book? Click
+              <span>
+                <Link
+                  replace={false}
+                  to="/new"
+                >
+                   here 
+                </Link>
+              </span>
+              to try again.
+            </h3>,
+          ],
+          "className": "books-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "author": "bob loblaw",
+              "title": "hi",
+              "type": "confirm",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Don't see your book? Click",
+                <span>
+                  <Link
+                    replace={false}
+                    to="/new"
+                  >
+                     here 
+                  </Link>
+                </span>,
+                "to try again.",
+              ],
+              "className": "end-text",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Don't see your book? Click",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Link
+                    replace={false}
+                    to="/new"
+                  >
+                     here 
+                  </Link>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": " here ",
+                    "replace": false,
+                    "to": "/new",
+                  },
+                  "ref": null,
+                  "rendered": " here ",
+                  "type": [Function],
+                },
+                "type": "span",
+              },
+              "to try again.",
+            ],
+            "type": "h3",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <h3
+            className="books-text"
+          >
+            Confirm your loved book:
+          </h3>,
+          <hr />,
+          <div
+            className="books-container"
+          >
+            <Connect(BookCard)
+              author="bob loblaw"
+              title="hi"
+              type="confirm"
+            />
+            <h3
+              className="end-text"
+            >
+              Don't see your book? Click
+              <span>
+                <Link
+                  replace={false}
+                  to="/new"
+                >
+                   here 
+                </Link>
+              </span>
+              to try again.
+            </h3>
+          </div>,
+        ],
+        "className": "books",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Confirm your loved book:",
+            "className": "books-text",
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+          "ref": null,
+          "rendered": "Confirm your loved book:",
+          "type": "h3",
         },
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              Array [
+                <Connect(BookCard)
+                  author="bob loblaw"
+                  title="hi"
+                  type="confirm"
+                />,
+              ],
+              <h3
+                className="end-text"
+              >
+                Don't see your book? Click
+                <span>
+                  <Link
+                    replace={false}
+                    to="/new"
+                  >
+                     here 
+                  </Link>
+                </span>
+                to try again.
+              </h3>,
+            ],
+            "className": "books-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "author": "bob loblaw",
+                "title": "hi",
+                "type": "confirm",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Don't see your book? Click",
+                  <span>
+                    <Link
+                      replace={false}
+                      to="/new"
+                    >
+                       here 
+                    </Link>
+                  </span>,
+                  "to try again.",
+                ],
+                "className": "end-text",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Don't see your book? Click",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      to="/new"
+                    >
+                       here 
+                    </Link>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": " here ",
+                      "replace": false,
+                      "to": "/new",
+                    },
+                    "ref": null,
+                    "rendered": " here ",
+                    "type": [Function],
+                  },
+                  "type": "span",
+                },
+                "to try again.",
+              ],
+              "type": "h3",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -117,7 +395,7 @@ ShallowWrapper {
 exports[`Books should match the snapshot if type is recommendations 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(Books)
+  Symbol(enzyme.__unrendered__): <Books
     lovedBook={
       Object {
         "author": "bob loblaw",
@@ -153,59 +431,175 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <h3
+          className="books-text"
+        >
+          Here are some recommendations based on '[object Object]':
+        </h3>,
+        <hr />,
+        <div
+          className="books-container"
+        >
+          <Connect(BookCard)
+            author="bob loblob"
+            title="hey"
+            type="recommendations"
+          />
+        </div>,
+      ],
+      "className": "books",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Here are some recommendations based on '[object Object]':",
+          "className": "books-text",
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+        "ref": null,
+        "rendered": "Here are some recommendations based on '[object Object]':",
+        "type": "h3",
       },
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Array [
+              <Connect(BookCard)
+                author="bob loblob"
+                title="hey"
+                type="recommendations"
+              />,
+            ],
+            undefined,
+          ],
+          "className": "books-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "author": "bob loblob",
+              "title": "hey",
+              "type": "recommendations",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          undefined,
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <h3
+            className="books-text"
+          >
+            Here are some recommendations based on '[object Object]':
+          </h3>,
+          <hr />,
+          <div
+            className="books-container"
+          >
+            <Connect(BookCard)
+              author="bob loblob"
+              title="hey"
+              type="recommendations"
+            />
+          </div>,
+        ],
+        "className": "books",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Here are some recommendations based on '[object Object]':",
+            "className": "books-text",
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+          "ref": null,
+          "rendered": "Here are some recommendations based on '[object Object]':",
+          "type": "h3",
         },
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              Array [
+                <Connect(BookCard)
+                  author="bob loblob"
+                  title="hey"
+                  type="recommendations"
+                />,
+              ],
+              undefined,
+            ],
+            "className": "books-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "author": "bob loblob",
+                "title": "hey",
+                "type": "recommendations",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            undefined,
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
