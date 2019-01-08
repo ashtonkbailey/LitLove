@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 
 import { addPossibleBooksThunk } from '../../thunks/addPossibleBooksThunk';
 
-class Search extends Component {
+export class Search extends Component {
   constructor() {
     super()
     this.state = {
