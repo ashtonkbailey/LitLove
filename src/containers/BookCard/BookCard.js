@@ -11,6 +11,7 @@ class BookCard extends Component {
       confirmed: false
     }
   }
+
   handleClick = async (e) => {
     const bookTitle = this.props.volumeInfo.title;
     await this.props.confirmBook(bookTitle);
@@ -21,20 +22,36 @@ class BookCard extends Component {
     const { confirmed } = this.state;
     let bookTitle;
     let blurb;
-    let fave;
     let imageURL;
     let author;
+    let cardContent;
 
     if (this.props.type === 'confirm') {
       imageURL = this.props.volumeInfo.imageLinks.smallThumbnail;
       author = this.props.volumeInfo.authors[0];
       bookTitle = this.props.volumeInfo.title;
       blurb = this.props.volumeInfo.description;
-      fave = ''
+      cardContent = (
+        <div>
+          <button
+            className="confirm-btn"
+            onClick={this.handleClick}
+          >Confirm</button>
+          <img src={imageURL} alt={bookTitle} />
+          <h3>{bookTitle}</h3>
+          <h4>{author}</h4>
+          <p>{blurb}</p>
+        </div>
+      )
     } else {
       bookTitle = this.props.Name;
       blurb = this.props.wTeaser;
-      fave = <button>star</button>
+      cardContent = (
+        <div>
+          <h3 className="rec-title">{bookTitle}</h3>
+          <p>{blurb}</p>
+        </div>
+      )
     }
 
     if (confirmed) {
@@ -43,15 +60,7 @@ class BookCard extends Component {
 
     return (
       <div className="card">
-        <button
-          className="confirm-btn"
-          onClick={this.handleClick}
-        >Confirm</button>
-        <img src={imageURL} alt={bookTitle} />
-          {fave}
-        <h3>{bookTitle}</h3>
-        <h4>{author}</h4>
-        <p>{blurb}</p>
+        {cardContent}
       </div>
     )
   }
