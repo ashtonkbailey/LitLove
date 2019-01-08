@@ -29,7 +29,7 @@ describe('favoritesReducer', () => {
     expect(result).toEqual(expected);
   });
 
-  it('should return default state if there is not action type', () => {
+  it('should return default state if there is no action type', () => {
     const expected = [];
     const result = favoritesReducer(undefined, {});
     expect(result).toEqual(expected);

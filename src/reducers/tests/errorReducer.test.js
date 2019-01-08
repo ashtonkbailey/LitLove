@@ -12,8 +12,8 @@ describe('errorReducer', () => {
   });
 
   it('should return default state if action is not passed in', () => {
-    const state = '';
-    const result = errorReducer(state, {});
-    expect(result).toEqual('')
+    const expected = '';
+    const result = errorReducer(undefined, {});
+    expect(result).toEqual(expected)
   });
 })
