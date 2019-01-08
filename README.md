@@ -4,23 +4,23 @@ This is a solo project intended to cement React Redux principles and uses Redux 
 
 ## Wireframes
 
-![Landing Page](<img width="732" alt="landing-page" src="https://user-images.githubusercontent.com/35431767/50864782-57a91e00-1360-11e9-8967-f945ccc7841d.png">)
+![Landing Page](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/landing-page.png)
 
-![Loved Book Search](<img width="732" alt="loved-book-search" src="https://user-images.githubusercontent.com/35431767/50864796-65f73a00-1360-11e9-8ce1-79e699d224a1.png">)
+![Loved Book Search](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/loved-book-search.png)
 
-![New Search](<img width="732" alt="new-search" src="https://user-images.githubusercontent.com/35431767/50864806-6c85b180-1360-11e9-9c94-4864f8807c9d.png">)
+![New Search](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/new-search.png)
 
-![Recommended Books](<img width="732" alt="recommended-books" src="https://user-images.githubusercontent.com/35431767/50864816-760f1980-1360-11e9-9919-d6a374deef33.png">)
+![Recommended Books](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/recommended-books.png)
 
 ## Live
 
-![Landing Page](<img width="1440" alt="live-landing-page" src="https://user-images.githubusercontent.com/35431767/50865328-888a5280-1362-11e9-98f4-b25b8a7f89b6.png">)
+![Landing Page](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/live-landing-page.png)
 
-![Loved Book Search](<img width="1440" alt="live-loved-book" src="https://user-images.githubusercontent.com/35431767/50865335-8b854300-1362-11e9-87a3-21aaccb47db2.png">)
+![Loved Book Search](<https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/live-loved-book.png)
 
-![New Search](<img width="1440" alt="live-new-search" src="https://user-images.githubusercontent.com/35431767/50865338-9049f700-1362-11e9-954c-93a8677f6bf1.png">)
+![New Search](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/live-new-search.png)
 
-![Recommended Books](<img width="1440" alt="live-recommended" src="https://user-images.githubusercontent.com/35431767/50865346-95a74180-1362-11e9-902e-0415a59033ba.png">)
+![Recommended Books](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/live-recommended.png)
 
 ## Technologies
 
