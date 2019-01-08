@@ -16,7 +16,7 @@ This is a solo project intended to cement React Redux principles and uses Redux 
 
 ![Landing Page](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/live-landing-page.png)
 
-![Loved Book Search](<https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/live-loved-book.png)
+![Loved Book Search](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/live-loved-book.png)
 
 ![New Search](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/live-new-search.png)
 
