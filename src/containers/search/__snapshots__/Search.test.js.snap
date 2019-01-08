@@ -1,0 +1,525 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should match the snapshot with type of "new" 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Search
+    type="new"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p
+          className="search text"
+        >
+          Looking for your next book? Enter a title you love to start the search process.
+        </p>,
+        <form
+          className="search-form"
+          onSubmit={[Function]}
+        >
+          <input
+            autoFocus={true}
+            name="title"
+            onChange={[Function]}
+            placeholder="Book Title"
+            type="text"
+            value=""
+          />
+          <button
+            className="search-btn"
+          >
+            New Search
+          </button>
+        </form>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Looking for your next book? Enter a title you love to start the search process.",
+          "className": "search text",
+        },
+        "ref": null,
+        "rendered": "Looking for your next book? Enter a title you love to start the search process.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              autoFocus={true}
+              name="title"
+              onChange={[Function]}
+              placeholder="Book Title"
+              type="text"
+              value=""
+            />,
+            <button
+              className="search-btn"
+            >
+              New Search
+            </button>,
+          ],
+          "className": "search-form",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "autoFocus": true,
+              "name": "title",
+              "onChange": [Function],
+              "placeholder": "Book Title",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "New Search",
+              "className": "search-btn",
+            },
+            "ref": null,
+            "rendered": "New Search",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            className="search text"
+          >
+            Looking for your next book? Enter a title you love to start the search process.
+          </p>,
+          <form
+            className="search-form"
+            onSubmit={[Function]}
+          >
+            <input
+              autoFocus={true}
+              name="title"
+              onChange={[Function]}
+              placeholder="Book Title"
+              type="text"
+              value=""
+            />
+            <button
+              className="search-btn"
+            >
+              New Search
+            </button>
+          </form>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Looking for your next book? Enter a title you love to start the search process.",
+            "className": "search text",
+          },
+          "ref": null,
+          "rendered": "Looking for your next book? Enter a title you love to start the search process.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                autoFocus={true}
+                name="title"
+                onChange={[Function]}
+                placeholder="Book Title"
+                type="text"
+                value=""
+              />,
+              <button
+                className="search-btn"
+              >
+                New Search
+              </button>,
+            ],
+            "className": "search-form",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "autoFocus": true,
+                "name": "title",
+                "onChange": [Function],
+                "placeholder": "Book Title",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "New Search",
+                "className": "search-btn",
+              },
+              "ref": null,
+              "rendered": "New Search",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Search should match the snapshot with type of "welcome" 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Search
+    type="welcome"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p
+          className="welcome text"
+        >
+          Welcome!
+          <br />
+          We’d like to help you find your next great read. Enter a book title you love, and click the search button to find that book. Based on your choice, we’ll give you some recommendations.
+        </p>,
+        <form
+          className="search-form"
+          onSubmit={[Function]}
+        >
+          <input
+            autoFocus={true}
+            name="title"
+            onChange={[Function]}
+            placeholder="Book Title"
+            type="text"
+            value=""
+          />
+          <button
+            className="search-btn"
+          >
+            Start your Search
+          </button>
+        </form>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Welcome!",
+            <br />,
+            "We’d like to help you find your next great read. Enter a book title you love, and click the search button to find that book. Based on your choice, we’ll give you some recommendations.",
+          ],
+          "className": "welcome text",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Welcome!",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          "We’d like to help you find your next great read. Enter a book title you love, and click the search button to find that book. Based on your choice, we’ll give you some recommendations.",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              autoFocus={true}
+              name="title"
+              onChange={[Function]}
+              placeholder="Book Title"
+              type="text"
+              value=""
+            />,
+            <button
+              className="search-btn"
+            >
+              Start your Search
+            </button>,
+          ],
+          "className": "search-form",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "autoFocus": true,
+              "name": "title",
+              "onChange": [Function],
+              "placeholder": "Book Title",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Start your Search",
+              "className": "search-btn",
+            },
+            "ref": null,
+            "rendered": "Start your Search",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            className="welcome text"
+          >
+            Welcome!
+            <br />
+            We’d like to help you find your next great read. Enter a book title you love, and click the search button to find that book. Based on your choice, we’ll give you some recommendations.
+          </p>,
+          <form
+            className="search-form"
+            onSubmit={[Function]}
+          >
+            <input
+              autoFocus={true}
+              name="title"
+              onChange={[Function]}
+              placeholder="Book Title"
+              type="text"
+              value=""
+            />
+            <button
+              className="search-btn"
+            >
+              Start your Search
+            </button>
+          </form>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Welcome!",
+              <br />,
+              "We’d like to help you find your next great read. Enter a book title you love, and click the search button to find that book. Based on your choice, we’ll give you some recommendations.",
+            ],
+            "className": "welcome text",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Welcome!",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "We’d like to help you find your next great read. Enter a book title you love, and click the search button to find that book. Based on your choice, we’ll give you some recommendations.",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                autoFocus={true}
+                name="title"
+                onChange={[Function]}
+                placeholder="Book Title"
+                type="text"
+                value=""
+              />,
+              <button
+                className="search-btn"
+              >
+                Start your Search
+              </button>,
+            ],
+            "className": "search-form",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "autoFocus": true,
+                "name": "title",
+                "onChange": [Function],
+                "placeholder": "Book Title",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Start your Search",
+                "className": "search-btn",
+              },
+              "ref": null,
+              "rendered": "Start your Search",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

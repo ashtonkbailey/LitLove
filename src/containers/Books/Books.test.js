@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { Link } from 'react-router-dom';
 
-import Books, { mapStateToProps } from './Books';
+import { Books, mapStateToProps } from './Books';
 
 describe('Books', () => {
   let wrapper;
@@ -12,18 +13,27 @@ describe('Books', () => {
 
   it('should match the snapshot if type is confirm', () => {
     type = 'confirm';
-    possibleBooks = [{ title: 'hi', author: 'bob loblaw' }];
-    lovedBook = { title: 'hi', author: 'bob loblaw' };
-    recommendations = [{ title: 'hey', author: 'bob loblob' }];
+    possibleBooks = {items: [{ title: 'hi', author: 'bob loblaw', id: 123 }]};
+    lovedBook = { title: 'hi', author: 'bob loblaw', id: 123 };
+    recommendations = [{ title: 'hey', author: 'bob loblob', id: 123 }];
+    const prompt = (
+      <h3 className="end-text">
+        Don't see your book? Click
+        <span>
+          <Link to="/new"> here </Link>
+        </span>
+        to try again.
+      </h3>
+    )
     wrapper = shallow(<Books type={type} possibleBooks={possibleBooks} lovedBook={lovedBook} recommendations={recommendations} />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should match the snapshot if type is recommendations', () => {
     type = 'recommendations';
-    possibleBooks = [{ title: 'hi', author: 'bob loblaw' }];
-    lovedBook = { title: 'hi', author: 'bob loblaw' };
-    recommendations = [{ title: 'hey', author: 'bob loblob' }];
+    possibleBooks = [{ title: 'hi', author: 'bob loblaw', id: 123 }];
+    lovedBook = { title: 'hi', author: 'bob loblaw', id: 123 };
+    recommendations = [{ title: 'hey', author: 'bob loblob', id: 123 }];
     wrapper = shallow(<Books type={type} possibleBooks={possibleBooks} lovedBook={lovedBook} recommendations={recommendations} />);
     expect(wrapper).toMatchSnapshot();
   });
