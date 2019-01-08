@@ -3,7 +3,7 @@ const favoritesReducer = (state = [], action) => {
     case 'ADD_FAVORITE':
       return [...state, action.book]
     case 'DELETE_FAVORITE':
-      return [...state.slice(0, action.i), ...state.slice(action.i, + 1)]
+      return [...state.slice(0, action.i), ...state.slice(action.i + 1)]
     default:
       return state
   }
