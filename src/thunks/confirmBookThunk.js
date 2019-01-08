@@ -9,8 +9,8 @@ export const confirmBookThunk = (bookTitle) => {
       if (!response.ok) {
         throw Error('Unable to get book recommendations')
       }
-      const recommendedBooks = await response.json();
       dispatch(addLovedBook(bookTitle));
+      const recommendedBooks = await response.json();
       dispatch(addRecommendations(recommendedBooks.Similar.Results))
     } catch (error) {
       dispatch(setError(error.message))
