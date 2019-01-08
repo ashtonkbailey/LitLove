@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should match the snapshot with type of "new" 1`] = `
+<Connect(Search)
+  type="new"
+/>
+`;
+
+exports[`Search should match the snapshot with type of "welcome" 1`] = `
+<Connect(Search)
+  type="welcome"
+/>
+`;
