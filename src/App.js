@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route, Link, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types'
 
 import './index.scss';
 import logo from './assets/LitLoveLogo.png';
@@ -37,6 +38,10 @@ class App extends Component {
       </div>
     );
   }
+}
+
+App.propTypes = {
+  children: PropTypes.array
 }
 
 export default withRouter(App);

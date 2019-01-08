@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types'
 
 import BookCard from '../BookCard/BookCard';
 
@@ -55,6 +56,13 @@ export class Books extends Component {
       </div>
     )
   }
+}
+
+Books.propTypes = {
+  lovedBook: PropTypes.object.isRequired,
+  possibleBooks: PropTypes.object.isRequired,
+  recommendations: PropTypes.array.isRequired,
+  type: PropTypes.string.isRequired
 }
 
 export const mapStateToProps = (state) => ({
