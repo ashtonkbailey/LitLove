@@ -6,6 +6,7 @@ This is a solo project intended to cement React Redux principles and uses Redux 
 
 Clone down this repo:
 `git clone https://github.com/ashtonkbailey/LitLove.git`
+Rename 'src/containers/search/' as 'src/containers/Search/'
 
 In the project directory, run:
 ### `npm install`
