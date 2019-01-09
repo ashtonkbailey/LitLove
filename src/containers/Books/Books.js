@@ -12,9 +12,12 @@ export const Books = (props) => {
   let bookCards;
   let prompt;
 
-  if (type === 'confirm') {
+  if (type === 'confirm' && possibleBooks) {
+    const fullBooks = possibleBooks.filter((book) => {
+      return book.id && book.volumeInfo.authors
+    })
     text = "Confirm your loved book:";
-    bookCards = possibleBooks.items.map((book) => {
+    bookCards = fullBooks.map((book) => {
       return (
         <BookCard
           {...book}
@@ -24,15 +27,13 @@ export const Books = (props) => {
       )
     });
     prompt = (
-      <h3 className="end-text">
-        Don't see your book? Click
-        <span>
-          <Link to="/new"> here </Link>
-        </span>
-        to try again.
+      <h3 className="sorry-text">
+        Don't see your book? Click <span>
+          <Link to="/new">here</Link>
+        </span> to try again.
       </h3>
-    )
-  } else {
+    );
+  } else if (recommendations.length >= 1) {
     text = `Here are some recommendations based on '${lovedBook}':`;
     bookCards = recommendations.map((book) => {
       return (
@@ -43,6 +44,14 @@ export const Books = (props) => {
         />
       )
     })
+  } else {
+    prompt = (
+      <h3 className="sorry-text">
+        Sorry! We don't have any recommendations
+         for that book. Please click on "New Search"
+         to try a different book.
+      </h3>
+    )
   }
 
   return (
@@ -57,10 +66,9 @@ export const Books = (props) => {
   )
 }
 
-
 Books.propTypes = {
   lovedBook: PropTypes.object.isRequired,
-  possibleBooks: PropTypes.object.isRequired,
+  possibleBooks: PropTypes.array.isRequired,
   recommendations: PropTypes.array.isRequired,
   type: PropTypes.string.isRequired
 }

@@ -10,7 +10,7 @@ export const addPossibleBooksThunk = (title) => {
         throw Error('Unable to get book list')
       }
       const possibleBooks = await response.json();
-      dispatch(addPossibleBooks(possibleBooks))
+      dispatch(addPossibleBooks(possibleBooks.items))
     } catch (error) {
       dispatch(setError(error.message))
     }

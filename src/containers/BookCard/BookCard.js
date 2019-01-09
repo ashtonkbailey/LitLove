@@ -26,11 +26,11 @@ export class BookCard extends Component {
     let blurb;
     let imageURL;
     let author;
-    let cardContent;
+    let cardContent; 
 
     if (this.props.type === 'confirm') {
-      imageURL = this.props.volumeInfo.imageLinks.smallThumbnail;
       author = this.props.volumeInfo.authors[0];
+      imageURL = this.props.volumeInfo.imageLinks.smallThumbnail;
       bookTitle = this.props.volumeInfo.title;
       blurb = this.props.volumeInfo.description;
       cardContent = (
@@ -45,7 +45,7 @@ export class BookCard extends Component {
           <p>{blurb}</p>
         </div>
       )
-    } else {
+    } else if (this.props.type === 'recommendations') {
       bookTitle = this.props.Name;
       blurb = this.props.wTeaser;
       cardContent = (
