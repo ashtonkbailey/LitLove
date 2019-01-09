@@ -4,6 +4,7 @@ import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types'
 
 import { addPossibleBooksThunk } from '../../thunks/addPossibleBooksThunk';
+import '../../index.scss';
 
 export class Search extends Component {
   constructor() {
