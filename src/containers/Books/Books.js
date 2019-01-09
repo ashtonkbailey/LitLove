@@ -14,7 +14,7 @@ export const Books = (props) => {
 
   if (type === 'confirm' && possibleBooks) {
     const fullBooks = possibleBooks.filter((book) => {
-      return book.id && book.volumeInfo.authors
+      return book.id && book.volumeInfo.authors && book.volumeInfo.imageLinks
     })
     text = "Confirm your loved book:";
     bookCards = fullBooks.map((book) => {
