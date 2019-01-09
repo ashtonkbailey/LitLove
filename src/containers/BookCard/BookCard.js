@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
+import '../../index.scss';
 import { confirmBookThunk } from '../../thunks/confirmBookThunk'
 
 export class BookCard extends Component {
