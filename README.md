@@ -10,7 +10,7 @@ Clone down this repo:
 In the project directory, run:
 ### `npm install`
 
-In order to run locally you will also need to apply for a GoogleBooksAPI (Public API access) key [here](https://developers.google.com/books/docs/v1/using#APIKey) and a TasteDiveAPI key [here](https://tastedive.com/account/signin?next=%2Faccount%2Fapi_access). These keys should live in files called googleAPI.js and tasteDiveAPI.js (respectively) in the src/utils directory.
+In order to run locally you will also need to apply for a GoogleBooksAPI (Public API access) key [here](https://developers.google.com/books/docs/v1/using#APIKey) and a TasteDiveAPI key [here](https://tastedive.com/account/signin?next=%2Faccount%2Fapi_access). These keys should live in files called googleAPI.js (as `const googleKey`) and tasteDiveAPI.js (as `const tDKey`) in the src/utils directory.
 
 Then in the project directory, run:
 ### `npm start`
