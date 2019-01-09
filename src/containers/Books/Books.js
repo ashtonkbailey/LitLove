@@ -14,7 +14,7 @@ export const Books = (props) => {
 
   if (type === 'confirm' && possibleBooks) {
     const fullBooks = possibleBooks.filter((book) => {
-      return book.id && book.volumeInfo.authors && book.volumeInfo.imageLinks
+      return book.id && book.volumeInfo.authors && book.volumeInfo.imageLinks && book.volumeInfo.description
     })
     text = "Confirm your loved book:";
     bookCards = fullBooks.map((book) => {
@@ -27,11 +27,13 @@ export const Books = (props) => {
       )
     });
     prompt = (
-      <h3 className="sorry-text">
-        Don't see your book? Click <span>
-          <Link to="/new">here</Link>
-        </span> to try again.
-      </h3>
+      <div className="text-div">
+        <h3 className="end-text">
+          Don't see your book? Click <span>
+            <Link to="/new">here</Link>
+          </span> to try again.
+        </h3>
+      </div>
     );
   } else if (recommendations.length >= 1) {
     text = `Here are some recommendations based on '${lovedBook}':`;
