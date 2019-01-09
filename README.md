@@ -2,6 +2,19 @@
 
 This is a solo project intended to cement React Redux principles and uses Redux Thunks for api calls. The audience and one api was assigned (Millenials and TasteDive, respectively). I decided to use the GoogleBooks api to account for possible missing words and misspellings from the user. It takes in the user's 'loved book' and returns recommendations based on the book's title.
 
+## Using LitLove
+
+Clone down this repo:
+`git clone https://github.com/ashtonkbailey/LitLove.git`
+
+In the project directory, run:
+### `npm install`
+
+In order to run locally you will also need to apply for a GoogleBooksAPI (Public API access) key [here](https://developers.google.com/books/docs/v1/using#APIKey) and a TasteDiveAPI key [here](https://tastedive.com/account/signin?next=%2Faccount%2Fapi_access). These keys should live in files called googleAPI.js and tasteDiveAPI.js (respectively) in the src/utils directory.
+
+Then in the project directory, run:
+### `npm start`
+
 ## Wireframes
 
 ![Landing Page](https://github.com/ashtonkbailey/LitLove/blob/master/src/assets/landing-page.png)
@@ -32,10 +45,4 @@ This is a solo project intended to cement React Redux principles and uses Redux 
 - TasteDiveAPI
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-### `npm install`
-### `npm start`
 
