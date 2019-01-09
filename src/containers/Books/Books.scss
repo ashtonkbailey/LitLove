@@ -18,7 +18,9 @@ hr {
 .books-container {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 5em;
+  justify-content: center;
+  padding: 4em;
+  padding-top: 1em;
 }
 
 .end-text {
